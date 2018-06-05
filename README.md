@@ -20,7 +20,7 @@ One-line NodeJS installer used with [Benny](https://github.com/benchOS/benny) an
 ## Background
 One-line NodeJS installer used with [Benny](https://github.com/benchOS/benny) and [Bennyfile](https://github.com/benchOS/bennyfile).
 
-[![benOSRepoHeader](https://raw.githubusercontent.com/benchOS/benchOS-design/master/terminal-screens/getnjs.png)](https://github.com/benchOS/getnjs)
+[![benOSRepoHeader](https://raw.githubusercontent.com/benchOS/benchOS-design/master/terminal-screens/getnjs1.png)](https://github.com/benchOS/getnjs)
 
 
 ## Installation
