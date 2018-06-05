@@ -28,7 +28,7 @@ One-line NodeJS installer used with [Benny](https://github.com/benchOS/benny) an
 Easily Install NodeJS With One-Line.
 
 ```
-curl -fs https://raw.githubusercontent.com/benchOS/getnjs/master/go | sh
+curl -fs https://raw.githubusercontent.com/benchOS/getnjs/master/go | sh && getnjs latest
 ```
 
 ## Usage

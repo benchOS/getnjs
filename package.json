@@ -1,6 +1,6 @@
 {
   "name": "getnjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js Automated Installer",
   "main": "getnjs",
   "bin": {
