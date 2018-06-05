@@ -1,0 +1,19 @@
+{
+  "name": "getnjs",
+  "version": "1.0.2",
+  "description": "Node.js Automated Installer",
+  "main": "getnjs",
+  "bin": {
+    "getnjs": "./getnjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benchOS/getnjs"
+  },
+  "author": "Bench Open Systems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benchOS/getnjs/issues"
+  },
+  "homepage": "https://github.com/benchOS/getnjs"
+}
