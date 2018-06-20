@@ -24,7 +24,7 @@ update-versions () {
 }
 
 print-help () {
-	echo "getNJS Usage: getnjs version"
+	echo "usage: node-install version"
 }
 
 list () {
@@ -36,7 +36,7 @@ list () {
 }
 
 run () {
-	[ $# = 0 ] && error "getNJS Usage: getnjs version"
+	[ $# = 0 ] && error "usage: node-install version"
 	[ ! -d /usr/local/bin ] && error "/usr/local/bin does not exist"
 
 	local version=$1
@@ -91,11 +91,11 @@ run () {
 		local bin=$0
 		setup-completion () {
 			[ ! -d $1 ] && return 0
-			[ ! -w $1 ] && error "getNJS Permission Error: you do not have permission to write to $1"
-			$bin --completion > $1/getnjs || exit 1
+			[ ! -w $1 ] && error "permission error: you do not have permission to write to $1"
+			$bin --completion > $1/node-install || exit 1
 			echo "# completion installed. run the following to activate it now"
 			echo
-			echo ". $1/getnjs"
+			echo ". $1/node-install"
 			echo
 			exit 0
 		}
@@ -109,15 +109,15 @@ run () {
 	fi
 
 	if $completion; then
-		_getnjs () {
-			COMPREPLY=($(getnjs --list | grep "^${COMP_WORDS[$COMP_CWORD]}"))
+		_node-install () {
+			COMPREPLY=($(node-install --list | grep "^${COMP_WORDS[$COMP_CWORD]}"))
 		}
 		echo "# auto install to bash completion dir:"
-		echo "# getnjs --completion --save"
+		echo "# node-install --completion --save"
 		echo
-		declare -f _getnjs
+		declare -f _node-install
 		echo
-		echo complete -F _getnjs getnjs
+		echo complete -F _node-install node-install
 		exit 0
 	fi
 
